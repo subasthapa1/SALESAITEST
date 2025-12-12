@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import os
 import time
+from functools import reduce, partial
+from typing import Callable
 
 # Load .env file
 load_dotenv(r"..\Data\.env")
